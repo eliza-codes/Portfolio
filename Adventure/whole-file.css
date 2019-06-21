@@ -28,8 +28,11 @@ h1{
    }
 
    #crush{
-    border: solid;
-    background: grey;
+    text-decoration: none;
     color: black;
-
+    display: block;
+    background-color: rgb(190, 190, 190);
+    box-shadow: 5px 5px 5px gray;
+    margin-bottom: 2px;
+    width: 120px;
    }
