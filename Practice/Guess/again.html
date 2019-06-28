@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Guess Me</title>
+    </head>
+
+    <body>
+        </body>
 
 <script>
-
+var turns = 5
 var randomNum = Math.floor(Math.random() * 20)
 console.log(randomNum);
 
 var flag = true;
-while(flag == true) {
+while(turns > 0) {
     console.log("this is true");
-    var stop = prompt("Guess a number between 1 and 20. You have only 5 guesses.")
+    var stop = prompt("Guess a number between 1 and 20. You have only " + turns + " guesses left.");
+
+    stop = Number(stop)
     if (stop == randomNum){
-        document.write("You win!")
+        document.write("You win!");
       flag  = false;
     }
-
+    else{
+        document.write("You lose. T-T");
+    }
+    turns--;
 }
+
+
+
 
 
     </script>
