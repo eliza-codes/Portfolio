@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+
+var randomNum = Math.floor(Math.random() * 20)
+console.log(randomNum);
+
+var flag = true;
+while(flag == true) {
+    console.log("this is true");
+    var stop = prompt("Guess a number between 1 and 20. You have only 5 guesses.")
+    if (stop == randomNum){
+        document.write("You win!")
+      flag  = false;
+    }
+
+}
+
+
+    </script>
+
+
+
+
+
+    </html>
