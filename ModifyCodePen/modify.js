@@ -49,9 +49,9 @@ if (!del){
 }
 }
     }*/
-    document.querySelector('#delete-me-button').onclick = function() {
-    function myFunction() {
-    var del = document.getElementById(".delete-me-title");
-    list.removeChild(list.childNodes[0]);
-    }
+    document.querySelector('.delete-me-button').onclick = function() {
+    //function myFunction() {
+    let del = document.querySelector('#delete-me-title');
+    del.parentNode.removeChild(del);
+    //}
 }
