@@ -39,3 +39,18 @@ document.querySelector('#change-me-button').onclick = function() {
   }
   
   // try implementing this last one
+
+  let del = false;
+  /*  document.querySelector("#delete-me-button").onclick = function removeElement() {
+if (!del){
+    document.querySelector("#delete-me-button").onclick = function removeElement() {
+    var title = document.getElementById('delete-me-title')
+    elem.parentNode.removeChild('delete-me-title');
+}
+}
+    }*/
+
+ $("#delete-me-button").click(function(){
+    $("delme").remove();
+  });
+
