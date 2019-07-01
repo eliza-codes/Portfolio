@@ -40,7 +40,7 @@ document.querySelector('#change-me-button').onclick = function() {
   
   // try implementing this last one
 
-  let del = false;
+
   /*  document.querySelector("#delete-me-button").onclick = function removeElement() {
 if (!del){
     document.querySelector("#delete-me-button").onclick = function removeElement() {
@@ -50,7 +50,9 @@ if (!del){
 }
     }*/
 
- $("#delete-me-button").click(function(){
-    $("#delme").function();
-  });
+    function myFunction() {
+    var del = document.getElementById("delete-me-title");
+    document.querySelector('#delete-me-button').onclick = function() {
+    list.removeChild(list.childNodes[0]);
+    }
 
