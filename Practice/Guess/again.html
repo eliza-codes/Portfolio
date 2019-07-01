@@ -8,24 +8,41 @@
         </body>
 
 <script>
-var turns = 5
-var randomNum = Math.floor(Math.random() * 20)
+var turns = 5;
+var randomNum = Math.floor(Math.random() * 20);
 console.log(randomNum);
+var hint = "You guessed too high. Try a smaller number.";
+var hint = "You guessed too low. Try a larger number.";
+hint = "Guess a number between 1 and 20."
 
-var flag = true;
-while(turns > 0) {
-    console.log("this is true");
-    var stop = prompt("Guess a number between 1 and 20. You have only " + turns + " guesses left.");
+//var flag = true;
+while(turns >= 1) {
+    var stop = prompt(hint + "You have only " + turns + " guesses left.");
 
-    stop = Number(stop)
+    if (stop < randomNum){
+        stop = prompt(hintL);
+        console.log(hintL);
+
+    }
+
+    if (stop > randomNum){
+        stop = prompt(hintH);
+        console.log(hintH)
+
+    }
+
+    turns--;
+
+    //stop = Number(stop)
     if (stop == randomNum){
         document.write("You win!");
-      flag  = false;
+      //flag = false;
     }
-    else{
-        document.write("You lose. T-T");
+
+    if (stop !== 0){
+        document.write("You lose.")
+
     }
-    turns--;
 }
 
 
