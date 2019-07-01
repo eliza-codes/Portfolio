@@ -51,6 +51,6 @@ if (!del){
     }*/
 
  $("#delete-me-button").click(function(){
-    $("delme").remove();
+    $("#delme").function();
   });
 
