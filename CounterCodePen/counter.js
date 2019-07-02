@@ -8,8 +8,9 @@ var p1 = 1
 var p2 = 2
 
 // 1. add a handler for the `subtract` button
-document.querySelector("subtract").onclick function(){
-    value = (value - 0);
+document.querySelector("subtract").onclick = function(){
+    var result = (value - 1);
+    document.getElementById("#value").innerHTML = result;
 }
 
 // 2. add a handler for the 'add' button 
