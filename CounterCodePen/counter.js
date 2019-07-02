@@ -25,9 +25,9 @@ function change(sign){
 
     }
 
-    else (sign == "subtract");
+    else{
         value--;
         document.querySelector("#value").innerHTML = value;
-
+    }
 
 }
