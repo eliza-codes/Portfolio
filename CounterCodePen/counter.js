@@ -4,30 +4,30 @@ let value = 0
 
 // set the header to the initial value
 document.querySelector('#value').innerHTML = value.toString();
-/* var p1 = 1
-var p2 = 2
 
 // 1. add a handler for the `subtract` button
 document.querySelector("#subtract").onclick = function(){
-    value = (value - 1);
+    value--;
+    document.querySelector('#value').innerHTML = value;
     
-    console.log(value);
-}
+//add button
+document.querySelector('#add').onclick = function (){
+value++;
+document.querySelector('#value').innerHTML = value;
 
-// 2. add a handler for the 'add' button 
-*/
+}
 
 // 3. "DRY" your code out by making a function
 function change(sign){
     if (sign == "add"){
         value++;
-        document.querySelector("#add").innerHTML = value;
+        document.querySelector("#add").innerHTML = value.toString();
 
     }
 
     else{
         value--;
-        document.querySelector("#value").innerHTML = value;
+        document.querySelector("#value").innerHTML = value.toString();
     }
 
-}
+}}
